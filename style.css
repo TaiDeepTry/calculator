@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,700;1,400;1,500&display=swap');
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(320deg, #0F2027, #203A43, #2C5364);
+  display: flex;
+  font-family: "Josefin Sans";
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+  font-weight: bolder;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+
+.wrapper {
+  border-radius: 16px;
+  color: #232323;
+  background-color: #353d4e;
+  flex-basis: auto;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen {
+  border-bottom: 2px solid #00afa3;
+  color: #00b0a4;
+  font-size: 38px;
+  overflow: auto;
+  padding: 20px;
+  text-align: right;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  overflow: hidden;
+}
+.display {
+  padding-top: 30px;
+  font-size: 50px;
+}
+
+.last_calculation {
+  font-size: 20px;
+  justify-self: flex-end;
+  color: #ffffff;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calc-button {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background-color: #353d4e;
+  color: #ffffff;
+  flex-basis: 25%;
+  font-family: inherit;
+  font-size: 24px;
+  height: 65px;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  transition: ease-in-out 0.9s linear; 
+}
+
+.clear {
+  color: #00afa3;
+}
+
+.calc-button:last-child {
+  color: #00afa3;
+  background-color: #22414c;
+}
+.equal {
+  background-color: #00b0a4;
+  color: #ffffff;
+}
+.calc-button:last-child:hover {
+  background-color: #038980;
+  color: inherit;
+}
+
+.calc-button:hover {
+  background-color: #00b0a4;
+  color: #c2bebeff;
+}
+
+.calc-button:active {
+  background-color: #014e49;
+}
+
+.double {
+  flex-basis: 50%;
+}
+.triple {
+  flex-basis: 75%;
+}
+.author{
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
